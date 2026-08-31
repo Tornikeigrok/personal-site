@@ -30,7 +30,7 @@ jobs:
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: assignment1-ec-personal-site/dist
   deploy:
     needs: build
     runs-on: ubuntu-latest
