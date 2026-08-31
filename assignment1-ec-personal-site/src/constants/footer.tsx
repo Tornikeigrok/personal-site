@@ -14,7 +14,7 @@ export const SOCIAL_LINKS = [
     ),
   },
   {
-    href: '/resume.pdf',
+    href: `${import.meta.env.BASE_URL}resume.pdf`,
     label: 'Resume',
     icon: (
       <path d="M6 2.5h8l4.5 4.5V21a.5.5 0 0 1-.5.5H6a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5Zm7.5 1.1V7a.5.5 0 0 0 .5.5h3.4L13.5 3.6ZM8 12h8v1.5H8V12Zm0 3.5h8V17H8v-1.5ZM8 8.5h4V10H8V8.5Z" />
