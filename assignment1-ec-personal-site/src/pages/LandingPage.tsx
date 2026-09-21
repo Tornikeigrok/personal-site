@@ -195,9 +195,7 @@ export const LandingPage = () => {
         <p className="text-sm tracking-widest text-neutral-500 uppercase">Contact</p>
         <h2 className="mt-2 text-3xl font-semibold tracking-tight">Let&apos;s connect</h2>
         <p className="mt-4 max-w-xl text-neutral-400">
-          I&apos;m not currently looking for new opportunities, but I&apos;m always
-          happy to talk shop — system design, backend architecture, or
-          whatever you&apos;re building. Feel free to reach out.
+          I&apos;m not currently looking for new opportunities, but feel free to reach out to learn more about me.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           {SOCIAL_LINKS.map(({ href, copy, label, icon }) => {
