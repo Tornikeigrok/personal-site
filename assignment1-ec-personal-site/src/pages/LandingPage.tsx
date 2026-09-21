@@ -198,7 +198,7 @@ export const LandingPage = () => {
           I&apos;m not currently looking for new opportunities, but feel free to reach out to learn more about me.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
-          {SOCIAL_LINKS.map(({ href, copy, label, icon }) => {
+          {SOCIAL_LINKS.map(({ href, label, icon }) => {
             const content = (
               <>
                 <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
@@ -209,22 +209,6 @@ export const LandingPage = () => {
             )
             const className =
               'flex items-center gap-2 rounded-full border border-neutral-800 px-4 py-2 text-sm text-neutral-300 transition-colors hover:border-neutral-600 hover:bg-neutral-900 hover:text-white'
-
-            if (copy) {
-              return (
-                <button
-                  key={label}
-                  type="button"
-                  onClick={() => {
-                    navigator.clipboard.writeText(copy)
-                    toast(copy, { description: 'Email copied to clipboard' })
-                  }}
-                  className={className}
-                >
-                  {content}
-                </button>
-              )
-            }
 
             return (
               <a key={label} href={href} target="_blank" rel="noreferrer" className={className}>

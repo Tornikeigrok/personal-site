@@ -11,29 +11,12 @@ export const Footer = () => {
         <p className="text-xs">&copy; {year} Toko. All rights reserved.</p>
 
         <div className="flex items-center gap-4">
-          {SOCIAL_LINKS.map(({ href, copy, label, icon }) => {
+          {SOCIAL_LINKS.map(({ href, label, icon }) => {
             const iconSvg = (
               <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
                 {icon}
               </svg>
             )
-
-            if (copy) {
-              return (
-                <button
-                  key={label}
-                  type="button"
-                  aria-label={label}
-                  onClick={() => {
-                    navigator.clipboard.writeText(copy)
-                    toast(copy, { description: 'Email copied to clipboard' })
-                  }}
-                  className="text-neutral-400 transition-colors hover:text-white"
-                >
-                  {iconSvg}
-                </button>
-              )
-            }
 
             return (
               <a

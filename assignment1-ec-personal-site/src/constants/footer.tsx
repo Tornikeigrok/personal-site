@@ -21,7 +21,7 @@ export const SOCIAL_LINKS = [
     ),
   },
   {
-    copy: 'tokoahari@gmail.com',
+    href: 'mailto:tokoahari@gmail.com',
     label: 'Email',
     icon: (
       <path d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm1.4 2 6.1 5.2a1 1 0 0 0 1.3 0L19 6H5.4ZM5 18h14V7.7l-6.1 5.2a2 2 0 0 1-2.6 0L5 7.7V18Z" />
